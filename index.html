@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Offline Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Page 1 - Cover -->
+  <section id="page1" class="page">
+    <h1>Smoking-Induced DNA Methylation Level Reversibility Predictor</h1>
+    <input type="text" id="coverTitle" placeholder="Enter a title"><br><br>
+
+    <div class="content-box">
+      <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+      <p>This is some text in the box.</p>
+    </div>
+
+    <p>Please click the Start button to begin.</p>
+    <button id="startBtn">Start</button>
+  </section>
+
+  <!-- Page 2 - Inputs -->
+  <section id="page2" class="page hidden">
+    <h1>Input Page</h1>
+    <input type="text" id="inputTitle" placeholder="Enter a title"><br><br>
+
+    <div class="input-box">
+      <label>Name:</label>
+      <input type="text" id="nameInput">
+    </div>
+
+    <div class="input-box">
+      <label>Gender:</label>
+      <button id="genderBtn">Male</button>
+    </div>
+
+    <div class="input-box">
+      <label>Days since event:</label>
+      <input type="number" id="daysInput">
+    </div>
+
+    <div class="input-box">
+      <label>Marker:</label>
+      <button id="markerBtn">AHRR</button>
+    </div>
+
+    <button id="goBtn">Go</button>
+  </section>
+
+  <!-- Page 3 - AHRR Result -->
+  <section id="page3" class="page hidden">
+    <h1>AHRR Result Page</h1>
+    <p id="ahrrResult">[Result will be shown here]</p>
+
+    <button id="page3Btn1">Button 1</button>
+    <button id="page3Btn2">Button 2</button>
+    <button id="page3Btn3">Button 3</button>
+  </section>
+
+  <!-- Page 4 - F2RL3 Result -->
+  <section id="page4" class="page hidden">
+    <h1>F2RL3 Result Page</h1>
+    <p id="f2rl3Result">[Result will be shown here]</p>
+
+    <button id="page4Btn1">Button 1</button>
+    <button id="page4Btn2">Button 2</button>
+    <button id="page4Btn3">Button 3</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

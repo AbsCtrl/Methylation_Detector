@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-box {
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+.input-box {
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
