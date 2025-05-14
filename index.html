@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Interactive Offline Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Page 1 - Cover -->
   <section id="page1" class="page">
-    <h1>Smoking-Induced DNA Methylation Level Reversibility Predictor</h1>
+    <h1>Smoking-Induced DNA<br>
+      Methylation Level<br>
+      Reversibility Predictor</h1>
 
     <div class="content-box">
-      <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-      <p>This is some text in the box.</p>
+      <p>
+        <strong>Did you know that…</strong><br><br>
+        Smoking can switch off certain genes by changing your DNA? It’s called <em>DNA methylation</em>—and it can
+        increase many disease risks.
+        <br><br>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/022/379/220/large_2x/colorful-human-dna-strand-surrounded-dna-structure-generative-ai-free-photo.JPG"
+          alt="DNA Methylation Graphic" class="content-image">
+        <strong>But here's the good news:</strong> some of the changes can be reversed after you quit smoking. Curious
+        about how your body might recover?
+        <br><br>
+        Click below to see how your gene expression could improve over time after quitting!<br>⬇️
+      </p>
     </div>
 
     <p>Please click the Start button to begin.</p>
@@ -22,7 +37,9 @@
 
   <!-- Page 2 - Inputs -->
   <section id="page2" class="page hidden">
-    <h1>Input Page</h1>
+    <h1>Smoking-Induced DNA<br>
+      Methylation Level<br>
+      Reversibility Predictor</h1>
 
     <div class="input-box">
       <label>Name:</label>
@@ -35,13 +52,22 @@
     </div>
 
     <div class="input-box">
-      <label>Days since event:</label>
+      <label>Day(s) of Smoking Cessation:</label>
       <input type="number" id="daysInput">
     </div>
 
     <div class="input-box">
-      <label>Marker:</label>
+      <label>CpG Site:</label>
       <button id="markerBtn">AHRR</button>
+    </div>
+
+    <div class="small-content-box">
+      <p>
+        <strong>Note:</strong> AHRR and F2RL3 are two genes that are especially sensitive to smoking. Scientists have
+        found that specific spots on these genes—called GpC sites—show clear changes (like turning off) in people who
+        smoke. These changes are linked to a higher risk of diseases such as lung cancer and heart problems. Choose a
+        specific gene that you want to look at by clicking the buttons!
+      </p>
     </div>
 
     <button id="goBtn">Go</button>
@@ -49,30 +75,87 @@
 
   <!-- Page 3 - AHRR Result -->
   <section id="page3" class="page hidden">
-    <h1>AHRR Result Page</h1>
+    <h1>Smoking-Induced DNA<br>
+      Methylation Level<br>
+      Reversibility Predictor</h1>
+    <h2>AHRR Result Page</h2>
     <p id="ahrrResult">[Result will be shown here]</p>
 
-    <div class="button-group">
-    <button id="page3Btn1">Check out the other page</button>
-    <button id="page3Btn2">Back to Inputs</button>
-    <button id="page3Btn3">Done</button>
+    <div class="small-content-box">
+      <p id="ahrrFunFact">[AHRR Fun Fact will be shown here]</p>
     </div>
+
+    <div class="button-group">
+      <button id="page3Btn1">Check out the F2RL3 Gene</button>
+      <button id="page3Btn2">Back to Inputs</button>
+      <button id="page3Btn3">Done</button>
+    </div>
+
+    <p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
 
   </section>
 
   <!-- Page 4 - F2RL3 Result -->
   <section id="page4" class="page hidden">
-    <h1>F2RL3 Result Page</h1>
+    <h1>Smoking-Induced DNA<br>
+      Methylation Level<br>
+      Reversibility Predictor</h1>
+    <h2>F2RL3 Result Page</h2>
     <p id="f2rl3Result">[Result will be shown here]</p>
 
+    <div class="small-content-box">
+      <p id="f2rl3FunFact">[F2RL3 Fun Fact will be shown here]</p>
+    </div>
+
     <div class="button-group">
-      <button id="page4Btn1">Check out the other page</button>
+      <button id="page4Btn1">Check out the AHRR Gene</button>
       <button id="page4Btn2">Back to Inputs</button>
       <button id="page4Btn3">Done</button>
     </div>
 
+    <p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+
+  </section>
+
+  <!-- Page 5 - Finished Page -->
+
+  <section id="page5" class="page hidden">
+    <h1>Smoking-Induced DNA<br>
+      Methylation Level<br>
+      Reversibility Predictor</h1>
+
+    <div class="content-box">
+      <p>Thank you for visiting!<br><br><br><strong>It's never too late to quit</strong>
+        —every day without a cigarette is a win for your body and your future.
+        <img src="https://img.freepik.com/premium-photo/no-smoking-icon_181303-6261.jpg" alt="No Smoking Graphic"
+          class="content-image">
+      </p>
+    </div>
+
+    <button id="endBtn">Return to the Beginning</button>
   </section>
 
   <script src="script.js"></script>
 </body>
+
 </html>
