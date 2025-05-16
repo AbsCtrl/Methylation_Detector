@@ -150,7 +150,7 @@ document.getElementById('goBtn').addEventListener('click', () => {
     document.getElementById('ahrrResult').textContent = `AHRR Result for ${userData.name} (${userData.gender}): ${result}`;
 
     const percentileDiv = document.createElement('div');
-    percentileDiv.textContent = `You are at the ${percentile}th percentile!`;
+    percentileDiv.textContent = `You are at the ${percentile}th percentile for former smokers!`;
     percentileDiv.style.marginTop = "10px";
     percentileDiv.style.fontWeight = "bold";
     document.getElementById('ahrrResult').appendChild(percentileDiv);
@@ -164,7 +164,7 @@ document.getElementById('goBtn').addEventListener('click', () => {
     document.getElementById('f2rl3Result').textContent = `F2RL3 Result for ${userData.name} (${userData.gender}): ${result}`;
 
     const percentileDiv = document.createElement('div');
-    percentileDiv.textContent = `You are at the ${percentile}th percentile!`;
+    percentileDiv.textContent = `You are at the ${percentile}th percentile for former smokers!`;
     percentileDiv.style.marginTop = "10px";
     percentileDiv.style.fontWeight = "bold";
     document.getElementById('f2rl3Result').appendChild(percentileDiv);
@@ -184,7 +184,7 @@ document.getElementById('page3Btn1').addEventListener('click', () => {
   resultContainer.textContent = `F2RL3 Result for ${userData.name} (${userData.gender}): ${result}`;
   
   const percentileDiv = document.createElement('div');
-  percentileDiv.textContent = `You are at the ${percentile}th percentile!`;
+  percentileDiv.textContent = `You are at the ${percentile}th percentile for former smokers!`;
   percentileDiv.style.marginTop = "10px";
   percentileDiv.style.fontWeight = "bold";
   resultContainer.appendChild(percentileDiv);
@@ -215,7 +215,7 @@ document.getElementById('page4Btn1').addEventListener('click', () => {
   resultContainer.textContent = `AHRR Result for ${userData.name} (${userData.gender}): ${result}`;
   
   const percentileDiv = document.createElement('div');
-  percentileDiv.textContent = `You are at the ${percentile}th percentile!`;
+  percentileDiv.textContent = `You are at the ${percentile}th percentile for former smokers!`;
   percentileDiv.style.marginTop = "10px";
   percentileDiv.style.fontWeight = "bold";
   resultContainer.appendChild(percentileDiv);
