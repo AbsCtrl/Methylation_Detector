@@ -41,13 +41,14 @@ const f2rl3FunFacts = [
 // === CALCULATION FUNCTIONS (move these up here) ===
 function calculateAHRR(days, gender) {
   if (days <= 0) return "Invalid (days must be > 0)";
+  let logTime = Math.log(days);
   let result;
   if (gender === 'Female') {
-    result = 1.2 / (1 + Math.exp(0.017 * (days - 66.442)));
+    result = 0.2342 + 0.1397 * logTime;
   } else if (gender === 'Male') {
-    result = 0.923 / (1 + Math.exp(0.032 * (days - 85.859)));
+    result = 0.254 + 0.1321 * logTime;
   } else {
-    result = 1.2 / (1 + Math.exp(0.017 * (days - 66.169)));
+    result = 0.2481 + 0.1344 * logTime;
   }
   return result.toFixed(4);
 }
@@ -57,11 +58,11 @@ function calculateF2RL3(days, gender) {
   let logTime = Math.log(days);
   let result;
   if (gender === 'Female') {
-    result = 0.234 + 0.14 * logTime;
+    result = 0.32 + 0.087 * logTime;
   } else if (gender === 'Male') {
-    result = 0.254 + 0.132 * logTime;
+    result = 0.32 + 0.087 * logTime;
   } else {
-    result = 0.248 + 0.134 * logTime;
+    result = 0.32 + 0.087 * logTime;
   }
   return result.toFixed(4);
 }
